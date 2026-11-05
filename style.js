@@ -91,13 +91,25 @@
 
 // console.log(newStudent);
 
-let student={
-    name:"dhanu",
-    age:24,
-};
-let res=JSON.stringify(student);
-let resu=JSON.parse(res);
-console.log(resu);
+// let student={
+//     name:"dhanu",
+//     age:24,
+// };
+// let res=JSON.stringify(student);
+// let resu=JSON.parse(res);
+// console.log(resu);
 
-let today=new Date(2026,10,1,10,45,30);
-console.log(today);
+// let today=new Date(2026,10,1,10,45,30);
+// console.log(today);
+
+let tomorrow=new Date(2026,10,3);
+console.log( tomorrow.getFullYear());
+console.log( tomorrow.getDate());
+
+console.log( tomorrow.getHours());
+//console.log( tomorrow.getTime());
+
+tomorrow.setDate(15);
+
+
+console.log(tomorrow.toISOString());
